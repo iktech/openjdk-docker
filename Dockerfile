@@ -1,4 +1,4 @@
-FROM openjdk:14.0.2-jdk-buster
+FROM openjdk:15-jdk-buster
 LABEL maintainer="Igor Kolomiyets <igor.kolomiyets@iktech.io>"
 LABEL features="openjdk docker"
 
@@ -17,4 +17,3 @@ RUN add-apt-repository \
    
 RUN apt-get update -y
 RUN apt-get install -y docker-ce docker-ce-cli containerd.io
-  
